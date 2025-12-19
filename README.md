@@ -86,7 +86,6 @@ Success response:
   "message": "string",
   "data": {}
 }
-
 Error response:
 {
   "success": false,
