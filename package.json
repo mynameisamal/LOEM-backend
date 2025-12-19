@@ -1,0 +1,13 @@
+{
+  "name": "loem-backend",
+  "version": "1.0.0",
+  "description": "Backend API for LOEM Gallery, Coffee & Roastery - Mobile Delivery App",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "author": "Charity",
+  "license": "MIT"
+}
