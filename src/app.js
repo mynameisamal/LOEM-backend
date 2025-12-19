@@ -9,6 +9,7 @@ import addressRoutes from './modules/addresses/address.routes.js';
 import productRoutes from './modules/products/product.routes.js';
 import cartRoutes from './modules/carts/cart.routes.js';
 import orderRoutes from './modules/orders/order.routes.js';
+import voucherRoutes from './modules/vouchers/voucher.routes.js';
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.use('/api/addresses', addressRoutes);
 app.use('/api', productRoutes);
 app.use('/api/cart', cartRoutes);
 app.use('/api/orders', orderRoutes);
+app.use('/api/vouchers', voucherRoutes);
 
 
 export default app;
