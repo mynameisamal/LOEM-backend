@@ -7,6 +7,7 @@ import { authRequired } from './middlewares/authMiddleware.js';
 import userRoutes from './modules/users/user.routes.js';
 import addressRoutes from './modules/addresses/address.routes.js';
 import productRoutes from './modules/products/product.routes.js';
+import cartRoutes from './modules/carts/cart.routes.js';
 
 const app = express();
 
@@ -32,6 +33,7 @@ app.get('/api/test/protected', authRequired, (req, res) => {
 app.use('/api/users', userRoutes);
 app.use('/api/addresses', addressRoutes);
 app.use('/api', productRoutes);
+app.use('/api/cart', cartRoutes);
 
 
 export default app;
